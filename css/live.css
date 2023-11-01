@@ -1,0 +1,126 @@
+.live {
+    position: relative;
+    padding-bottom: 90px;
+    /* background-color: lightseagreen; */
+}
+.live-inner {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+.live-header {
+    position: relative;
+    
+}
+.live-title img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.live-main {
+    position: relative;
+}
+.live-slide-wrap {
+    position: relative;
+    height: 455px;
+    background-color: purple;
+    margin-top: 23px;
+}
+.live-slide-item {
+    position: relative;
+    height: 455px;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+.live-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.live-img {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+}
+.live-img img {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    object-fit: cover;
+}
+.live-info {
+    position: relative;
+    height: calc(100% - 310px);
+    padding: 22px 20px;
+}
+.live-good-list {
+    position: relative;
+}
+.live-good-list li {
+    position: relative;
+    margin-bottom: 10px;
+}
+.live-good-info-price {
+    position: relative;
+    font-size: 1.8rem;
+    color: #111;
+    font-weight: 400;
+    /* 1줄 말줄임 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.live-good-info-price b {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ef3e43;
+}
+.live-good-info-price em {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+}
+.live-good-info-desc {
+    position: relative;
+    font-size: 1.5rem;
+    color: #111;
+    word-break: break-all;
+    /* 2줄이상 말줄임 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.live-footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.live-footer-inner{
+    margin-top: 20px;
+}
+.live-footer-bt {
+    position: relative;
+    padding: 0 20px;
+    line-height: 56px;
+    border: 1px solid #e5e5e5;
+    border-radius: 44px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 700;
+}
+.live-footer-bt img {
+}

@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인터파크</title>
+    <!-- Swiper JS : 1. 기능을 먼저 불러들여 줌.-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/visual.js"></script>
+    <script src="js/recommend.js"></script>
+    <script src="js/tour.js"></script>
+    <script src="js/ticket.js"></script>
+    <script src="js/book.js"></script>
+    <script src="js/live.js"></script>
+    <script src="js/event.js"></script>
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> 
     <link rel="stylesheet" href="css/reset.css">
@@ -69,66 +80,1762 @@
         </header>
         <!-- 메인 영역 -->
         <div class="main">
-        <!-- 비주얼 슬라이드 영역 -->
-        <section class="visual">
-            <div class="visual-inner">
-                <!-- Swiper -->
-                <div class="swiper visual-slide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <!-- 실제 내용 배치 -->
-                            <div class="visual-slide-item">
-                                <a href="#">
-                                    <img src="images/v1.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="visual-slide-item">
-                                <a href="#">
-                                    <img src="images/v2.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="visual-slide-item">
-                                <a href="#">
-                                    <img src="images/v3.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="visual-slide-item">
-                                <a href="#">
-                                    <img src="images/v4.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="visual-slide-item">
-                            <a href="#">
-                                <img src="images/v5.jpg" alt="">
-                            </a>
-                        </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="visual-slide-item">
-                                <a href="#">
-                                    <img src="images/v6.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        
+            <!-- 비주얼 슬라이드 영역 -->
+            <section class="visual">
+                <div class="visual-inner">
+                    <!-- Swiper -->
+                    <div class="swiper visual-slide">
+                        <div class="swiper-wrapper">
+                            <!-- 외부 데이터 연동 -->
                         </div>
                     </div>
-                    <!-- Swiper Navigation -->
-                <button class="visual-slide-prev"></button>
-                <button class="visual-slide-next"></button>
+                        <!-- Swiper Navigation -->
+                    <button class="visual-slide-prev"></button>
+                    <button class="visual-slide-next"></button>
+                    </div>
                 </div>
+            </section>
+        <!--// 비주얼 슬라이드 영역 -->
+        <!-- 쇼핑 추천 -->
+            <section class="recommend">
+                <div class="recommend-inner">
+                    <div class="recommmend-header">
+                        <h2 class="recommend-title">쇼핑추천</h2>
+                        <span class="recommend-txt">할인이 쎄다! 지금, 특가 상품을 확인하세요.</span>
+                    </div>
+                    <div class="recommend-main">
+                        <div class="recommend-category">
+                            <ul class="recommend-list">
+                                <li>
+                                    <button class="recommend-cate-bt recommend-cate-bt-active">쎈딜</button>
+                                </li>
+                                <li>
+                                    <button class="recommend-cate-bt">베스트</button>
+                                </li>
+                                <li>
+                                    <button class="recommend-cate-bt">블프데이</button>
+                                </li>
+                                <li>
+                                    <button class="recommend-cate-bt">디지털프라자</button>
+                                </li>
+                                <li>
+                                    <a href="#" class="recommend-cate-bt">소담상회</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 추천 상품 슬라이드 -->
+                        <div class="recommend-slide-wrap">
+                            <!-- Swiper -->
+                            <div class="swiper recommend-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>38%</b>
+                                                                <em>19,800</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [스포츠파크] 불스원샷 7만키로(70000km) X 2개입
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>38%</b>
+                                                                <em>12,500</em>
+                                                                원~
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                서울우유 멸균 초코/딸기/흰우유 24팩/48팩 외
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>22%</b>
+                                                                <em>6,900</em>
+                                                                원~
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [I*POP] 아이팝 스파클링 워터 플레인 /  아이팝 탄산수 / 
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>24%</b>
+                                                                <em>7,500</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>24%</b>
+                                                                <em>7,500</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>24%</b>
+                                                                <em>7,500</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>24%</b>
+                                                                <em>7,500</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>24%</b>
+                                                                <em>7,500</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>24%</b>
+                                                                <em>7,500</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>24%</b>
+                                                                <em>7,500</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>24%</b>
+                                                                <em>7,500</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="recommend-slide-item">
+                                            <a href="" class="recommend-link">
+                                                <div class="recommend-img">
+                                                    <img src="images/r1.jpeg" alt="">
+                                                </div>
+                                                <div class="recommend-info">
+                                                    <ul class="recommend-good-list">
+                                                        <li>
+                                                            <span class="recommend-good-info-price">
+                                                                <b>24%</b>
+                                                                <em>7,500</em>
+                                                                원
+                                                            </span>
+                                                        </li>
+                                                        <li>
+                                                            <p class="recommend-good-info-desc">
+                                                                [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 좌, 우 이동버튼 : 너무 자주 재활용 됨 -->
+                            <!-- 그래서, 재활용 가능하도록 별도(공통) css 작업 진행-->
+                            <button class="slide-prev-bt">
+                                <img src="images/slider_arrow.svg" alt="">
+                            </button>
+                            <button class="slide-next-bt">
+                                <img src="images/slider_arrow.svg" alt="">
+                            </button>
+                        </div>
+                        <!-- //추천 상품 슬라이드 -->
+                    </div>
+                    <div class="recommend-footer">
+                            <button class="recommend-footer-bt">쇼핑 홈 바로가기
+                                <img src="images/icon_arrow.svg" alt="">
+                            </button>
+                    </div>
+                </div>
+            </section>
+        <!-- //쇼핑 추천 -->
+
+        <!-- 투어 특가 -->
+            <section class="tour">
+                <div class="tour-inner">
+                    <div class="tour-header">
+                        <h2 class="tour-title">투어 특가</h2>
+                        <span class="tour-txt">해외여행은 인터파크다</span>
+                    </div>
+                    <div class="tour-main">
+                        <div class="tour-category">
+                            <ul class="tour-list">
+                                <li>
+                                    <button class="tour-cate-bt tour-cate-bt-active">망설이면 품절</button>
+                                </li>
+                                <li>
+                                    <button class="tour-cate-bt">패키지</button>
+                                </li>
+                                <li>
+                                    <button class="tour-cate-bt">국내숙소</button>
+                                </li>
+                                <li>
+                                    <button class="tour-cate-bt">해외숙소</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 투어 특가 슬라이드 -->
+                        <div class="tour-slide-wrap">
+                        <!-- Swiper -->
+                        <div class="swiper tour-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="tour-slide-item">
+                                        <a href="" class="tour-link">
+                                            <div class="tour-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="tour-info">
+                                                <ul class="tour-good-list">
+                                                    <li>
+                                                        <span class="tour-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원~
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="tour-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-slide-item">
+                                        <a href="" class="tour-link">
+                                            <div class="tour-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="tour-info">
+                                                <ul class="tour-good-list">
+                                                    <li>
+                                                        <span class="tour-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원~
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="tour-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-slide-item">
+                                        <a href="" class="tour-link">
+                                            <div class="tour-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="tour-info">
+                                                <ul class="tour-good-list">
+                                                    <li>
+                                                        <span class="tour-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원~
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="tour-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-slide-item">
+                                        <a href="" class="tour-link">
+                                            <div class="tour-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="tour-info">
+                                                <ul class="tour-good-list">
+                                                    <li>
+                                                        <span class="tour-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원~
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="tour-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-slide-item">
+                                        <a href="" class="tour-link">
+                                            <div class="tour-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="tour-info">
+                                                <ul class="tour-good-list">
+                                                    <li>
+                                                        <span class="tour-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="tour-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-slide-item">
+                                        <a href="" class="tour-link">
+                                            <div class="tour-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="tour-info">
+                                                <ul class="tour-good-list">
+                                                    <li>
+                                                        <span class="tour-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="tour-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-slide-item">
+                                        <a href="" class="tour-link">
+                                            <div class="tour-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="tour-info">
+                                                <ul class="tour-good-list">
+                                                    <li>
+                                                        <span class="tour-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="tour-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-slide-item">
+                                        <a href="" class="tour-link">
+                                            <div class="tour-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="tour-info">
+                                                <ul class="tour-good-list">
+                                                    <li>
+                                                        <span class="tour-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="tour-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tour-slide-item">
+                                        <a href="" class="tour-link">
+                                            <div class="tour-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="tour-info">
+                                                <ul class="tour-good-list">
+                                                    <li>
+                                                        <span class="tour-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="tour-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slide-prev-bt">
+                            <img src="images/slider_arrow.svg" alt="">
+                        </button>
+                        <button class="slide-next-bt">
+                            <img src="images/slider_arrow.svg" alt="">
+                        </button>
+                         <!-- //투어 특가 슬라이드 -->
+                        </div>
+                    </div>
+                </div>
+                    <div class="tour-footer">
+                        <button class="tour-footer-bt">투어 홈 바로가기
+                            <img src="images/icon_arrow.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        <!-- //투어 특가 -->
+
+        <!-- 티켓 랭킹 -->
+            <section class="ticket">
+                <div class="ticket-inner">
+                    <div class="ticket-header">
+                        <h2 class="ticket-title">티켓 랭킹</h2>
+                        <span class="ticket-txt">오늘 뭐볼까? 지금 HOT한 공연</span>
+                    </div>
+                    <div class="ticket-main">
+                        <div class="ticket-category">
+                            <ul class="ticket-list">
+                                <li>
+                                    <button class="ticket-cate-bt ticket-cate-bt-active">뮤지컬</button>
+                                </li>
+                                <li>
+                                    <button class="ticket-cate-bt">콘서트</button>
+                                </li>
+                                <li>
+                                    <button class="ticket-cate-bt">스포츠</button>
+                                </li>
+                                <li>
+                                    <button class="ticket-cate-bt">전시/행사</button>
+                                </li>
+                                <li>
+                                    <button class="ticket-cate-bt">클래식/무용</button>
+                                </li>
+                                <li>
+                                    <button class="ticket-cate-bt">아동/가족</button>
+                                </li>
+                                <li>
+                                    <button class="ticket-cate-bt">연극</button>
+                                </li>
+                                <li>
+                                    <button class="ticket-cate-bt">레저/캠핑</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 티켓 랭킹 슬라이드 -->
+                    <div class="ticket-slide-wrap">
+                        <!-- Swiper -->
+                        <div class="swiper ticket-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="ticket-slide-item">
+                                        <a href="" class="ticket-link">
+                                            <div class="ticket-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="ticket-info">
+                                                <ul class="ticket-good-list">
+                                                    <li>
+                                                        <span class="ticket-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="ticket-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ticket-slide-item">
+                                        <a href="" class="ticket-link">
+                                            <div class="ticket-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="ticket-info">
+                                                <ul class="ticket-good-list">
+                                                    <li>
+                                                        <span class="ticket-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="ticket-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ticket-slide-item">
+                                        <a href="" class="ticket-link">
+                                            <div class="ticket-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="ticket-info">
+                                                <ul class="ticket-good-list">
+                                                    <li>
+                                                        <span class="ticket-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="ticket-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ticket-slide-item">
+                                        <a href="" class="ticket-link">
+                                            <div class="ticket-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="ticket-info">
+                                                <ul class="ticket-good-list">
+                                                    <li>
+                                                        <span class="ticket-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="ticket-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ticket-slide-item">
+                                        <a href="" class="ticket-link">
+                                            <div class="ticket-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="ticket-info">
+                                                <ul class="ticket-good-list">
+                                                    <li>
+                                                        <span class="ticket-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="ticket-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ticket-slide-item">
+                                        <a href="" class="ticket-link">
+                                            <div class="ticket-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="ticket-info">
+                                                <ul class="ticket-good-list">
+                                                    <li>
+                                                        <span class="ticket-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="ticket-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ticket-slide-item">
+                                        <a href="" class="ticket-link">
+                                            <div class="ticket-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="ticket-info">
+                                                <ul class="ticket-good-list">
+                                                    <li>
+                                                        <span class="ticket-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="ticket-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="ticket-slide-item">
+                                        <a href="" class="ticket-link">
+                                            <div class="ticket-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="ticket-info">
+                                                <ul class="ticket-good-list">
+                                                    <li>
+                                                        <span class="ticket-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="ticket-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <button class="slide-prev-bt">
+                        <img src="images/slider_arrow.svg" alt="">
+                    </button>
+                    <button class="slide-next-bt">
+                        <img src="images/slider_arrow.svg" alt="">
+                    </button>
+                    <!-- //티켓 랭킹 슬라이드 -->
+                    <div class="ticket-footer">
+                        <div class="ticket-footer-inner">
+                        <div>
+                            <button class="ticket-footer-bt">티켓 홈 바로가기
+                                <img src="images/icon_arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        <!-- //티켓 랭킹 -->
+
+        <!-- 인터파크 라이브 -->
+            <section class="live">
+                <div class="live-inner">
+                    <div class="live-header">
+                    </div>
+                    <div class="live-main">
+                        <div class="live-title">
+                            <img src="images/interpark_live.svg" alt="인터파크 라이브">
+                        </div>
+                    </div>
+                    <!-- 인터파크 라이브 슬라이드 -->
+                    <div class="live-slide-wrap">
+                        <!-- Swiper -->
+                        <div class="swiper live-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="live-slide-item">
+                                        <a href="" class="live-link">
+                                            <div class="live-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="live-info">
+                                                <ul class="live-good-list">
+                                                    <li>
+                                                        <span class="live-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="live-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
+                        <button class="slide-prev-bt">
+                            <img src="images/slider_arrow.svg" alt="">
+                        </button>
+                        <button class="slide-next-bt">
+                            <img src="images/slider_arrow.svg" alt="">
+                        </button>
+                    </div>
+                    <!-- //인터파크 라이브 슬라이드 -->
+                    <div class="live-footer">
+                        <div class="live-footer-inner">
+                            <button class="live-footer-bt">인터파크 라이브 바로가기
+                                <img src="images/icon_arrow.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- //인터파크 라이브 -->
+
+        <!-- 오늘의 도서 -->
+            <section class="book">
+                <div class="book-inner">
+                    <div class="book-header">
+                        <h2 class="book-title">오늘의 도서</h2>
+                        <span class="book-txt">지금 읽기 딱 좋은 책, 놓치지 마세요!</span>
+                    </div>
+                    <div class="book-main">
+                        <div class="book-category">
+                            <ul class="book-list">
+                                <li>
+                                    <button class="book-cate-bt book-cate-bt-active">MD's Pick</button>
+                                </li>
+                                <li>
+                                    <button class="book-cate-bt">베스트셀러</button>
+                                </li>
+                                <li>
+                                    <button class="book-cate-bt">신간추천</button>
+                                </li>
+                                <li>
+                                    <button class="book-cate-bt">특가할인</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--오늘의 도서 슬라이드 -->
+                    <div class="book-slide-wrap">
+                        <!-- Swiper -->
+                        <div class="swiper book-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="book-slide-item">
+                                        <a href="" class="book-link">
+                                            <div class="book-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="book-info">
+                                                <ul class="book-good-list">
+                                                    <li>
+                                                        <span class="book-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="book-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book-slide-item">
+                                        <a href="" class="book-link">
+                                            <div class="book-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="book-info">
+                                                <ul class="book-good-list">
+                                                    <li>
+                                                        <span class="book-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="book-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book-slide-item">
+                                        <a href="" class="book-link">
+                                            <div class="book-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="book-info">
+                                                <ul class="book-good-list">
+                                                    <li>
+                                                        <span class="book-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="book-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book-slide-item">
+                                        <a href="" class="book-link">
+                                            <div class="book-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="book-info">
+                                                <ul class="book-good-list">
+                                                    <li>
+                                                        <span class="book-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="book-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book-slide-item">
+                                        <a href="" class="book-link">
+                                            <div class="book-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="book-info">
+                                                <ul class="book-good-list">
+                                                    <li>
+                                                        <span class="book-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="book-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book-slide-item">
+                                        <a href="" class="book-link">
+                                            <div class="book-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="book-info">
+                                                <ul class="book-good-list">
+                                                    <li>
+                                                        <span class="book-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="book-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book-slide-item">
+                                        <a href="" class="book-link">
+                                            <div class="book-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="book-info">
+                                                <ul class="book-good-list">
+                                                    <li>
+                                                        <span class="book-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="book-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book-slide-item">
+                                        <a href="" class="book-link">
+                                            <div class="book-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="book-info">
+                                                <ul class="book-good-list">
+                                                    <li>
+                                                        <span class="book-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="book-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book-slide-item">
+                                        <a href="" class="book-link">
+                                            <div class="book-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="book-info">
+                                                <ul class="book-good-list">
+                                                    <li>
+                                                        <span class="book-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="book-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="book-slide-item">
+                                        <a href="" class="book-link">
+                                            <div class="book-img">
+                                                <img src="images/r1.jpeg" alt="">
+                                            </div>
+                                            <div class="book-info">
+                                                <ul class="book-good-list">
+                                                    <li>
+                                                        <span class="book-good-info-price">
+                                                            <b>24%</b>
+                                                            <em>7,500</em>
+                                                            원
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <p class="book-good-info-desc">
+                                                            [스포츠파크]  노스페이스 겨울 구스다운 패딩 슬립온 NS93M50
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slide-prev-bt">
+                            <img src="images/slider_arrow.svg" alt="">
+                        </button>
+                        <button class="slide-next-bt">
+                            <img src="images/slider_arrow.svg" alt="">
+                        </button>
+                    </div>
+                    <!-- //오늘의 도서 슬라이드 -->
+                    <div class="book-footer">
+                        <div class="book-footer-inner">
+                            <button class="book-footer-bt">도서 홈 바로가기
+                                <img src="images/icon_arrow.svg" alt="">
+                        </button>
+                    </div>
+                    </div>
+                </div>
+            </section>
+        <!-- //오늘의 도서 -->
+
+        <!-- 이벤트 -->
+        <section class="event">
+            <div class="event-inner">
+                <div class="event-header">
+                    <h2 class="event-title">이벤트</h2>
+                    <span class="event-txt">인터파크에서 할인혜택을 꼭 챙기세요.</span>
+                </div>
+                <div class="event-main"></div>
+                </div>
+                <!-- 이벤트 슬라이드 -->
+                <div class="event-slide-wrap">
+                    <!-- Swiper -->
+                    <div class="swiper event-slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_1.jpeg" alt="">
+                                        </div> 
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_2.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_3.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_4.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_5.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_6.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_7.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_8.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_9.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_10.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_11.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_12.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_13.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_14.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_15.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_16.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_17.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_18.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_19.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="event-slide-item">
+                                    <a href="" class="event-link">
+                                        <div class="event-img">
+                                            <img src="images/event_20.jpeg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slide-prev-bt">
+                                <img src="images/slider_arrow.svg" alt="">
+                            </button>
+                            <button class="slide-next-bt">
+                                <img src="images/slider_arrow.svg" alt="">
+                            </button>
+                </div>
+                <!-- //이벤트 슬라이드 -->
+                <div class="event-footer"></div>
             </div>
         </section>
-        <!--// 비주얼 슬라이드 영역 -->
+        <!-- //이벤트 -->
+
         </div>
+
         <!-- 하단 영역 -->
         <footer class="footer">
 
@@ -137,27 +1844,6 @@
 </body>
 </html>
 
-<script>
-    console.log("html 태그 끝에 기재가 정말 좋은 자리")
-</script>
 
-<!-- Swiper JS : 1. 기능을 먼저 불러들여 줌.-->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper : 2. 기능을 사용함-->
-<script>
-    var swiper = new Swiper(".visual-slide", {
-        slidesPerView: 2,
-        spaceBetween: 24,
-        loop: true,
-        autoplay: {
-        delay: 1000,
-        disableOnInteraction: false,
-    },
-    speed: 500,
-    navigation: {
-        nextEl: ".visual-slide-next",
-        prevEl: ".visual-slide-prev",
-    },
-    });
-</script>
