@@ -16,6 +16,7 @@
     position: relative;
     display: block;
     margin: 0 auto;
+    padding-top: 10px;
 }
 
 .live-main {
@@ -24,27 +25,27 @@
 .live-slide-wrap {
     position: relative;
     height: 455px;
-    background-color: purple;
+    /* background-color: purple; */
     margin-top: 23px;
 }
 .live-slide-item {
     position: relative;
     height: 455px;
     border: 1px solid #e8e8e8;
-    border-radius: 10px;
-    background-color: #f7f7f7;
     overflow: hidden;
+    background-color: #f7f7f7;
+    border-radius: 10px;
 }
 .live-link {
     position: relative;
-    display: block;
     width: 100%;
     height: 100%;
+    display: block;
 }
 .live-img {
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 310px;
+    height: 100%;
     overflow: hidden;
 }
 .live-img img {
@@ -58,50 +59,102 @@
 }
 .live-info {
     position: relative;
-    height: calc(100% - 310px);
-    padding: 22px 20px;
+    /* top: 20px;
+    left: 20px; */
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    padding-top: 10px;
+
 }
-.live-good-list {
+.live-info-state {
     position: relative;
+    top: 5px;
+    width: 68px;
+    height: 32px;
+    display: block;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    border-radius: 25px;
 }
-.live-good-list li {
+.live-info-title {
     position: relative;
-    margin-bottom: 10px;
-}
-.live-good-info-price {
-    position: relative;
-    font-size: 1.8rem;
-    color: #111;
-    font-weight: 400;
-    /* 1줄 말줄임 */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-.live-good-info-price b {
-    position: relative;
+    top: 15px;
+    padding-top: 20px;
     font-size: 2rem;
     font-weight: 700;
-    color: #ef3e43;
+    line-height: 2.4rem;
+    color: #fff;
 }
-.live-good-info-price em {
+.live-day {
     position: relative;
-    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    top: 35%;
+
+}
+.live-day-date {
+    position: relative;
+    text-align: center;
+    font-size: 2.8rem;
+    color: #fff;
+
+}
+.live-day-time {
+    position: relative;
+    font-size: 5rem;
+    line-height: 6rem;
     font-weight: 700;
-    font-style: normal;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+
 }
-.live-good-info-desc {
+
+.live-good {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 20px;
+    left: 20px;
+}
+.live-good img {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+
+}
+.live-good-title {
     position: relative;
+    color: #fff;
     font-size: 1.5rem;
-    color: #111;
-    word-break: break-all;
-    /* 2줄이상 말줄임 */
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    line-height: 1.8rem;
+
 }
+.live-good-discount {
+    position: relative;
+    color: #ef3e43;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+
+
+}
+.live-good-price {
+    position: relative;
+    color: #fff;
+    line-height: 2.4rem;
+    font-weight: 700;
+}
+
+
+
 .live-footer {
     position: relative;
     display: flex;
@@ -113,14 +166,14 @@
 .live-footer-bt {
     position: relative;
     padding: 0 20px;
-    line-height: 56px;
     border: 1px solid #e5e5e5;
-    border-radius: 44px;
     background-color: #fff;
-    cursor: pointer;
     font-size: 1.4rem;
-    color: #333;
     font-weight: 700;
+    line-height: 56px;
+    color: #333;
+    cursor: pointer;
+    border-radius: 44px;
 }
 .live-footer-bt img {
 }

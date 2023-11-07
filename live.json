@@ -1,87 +1,245 @@
 {
     "total": 12,
-    "good_1": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_1": {
+        "live_info": {
+            "image": "images/l1.png",
+            "state": "방송예정",
+            "title": "네스트호텔 최대 73% 라이브특가",
+            "url": "c.html"
+        },
+    
+        "live_day": {
+            "date": "11월 02일 (목)",
+            "time": "18:00"
+        },
+    
+        "live_good": {
+            "image": "images/l1_1.jpeg",
+            "title": "네스트호텔 라이브특가 구매...",
+            "discount": 73,
+            "price": 125100,
+            "url": "good.html"
+        }
     },
-    "good_2": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_2": {
+        "live_info": {
+            "image": "images/l2.jpeg",
+            "state": "방송예정",
+            "title": "[에듀트립] 글로벌 캠프 첫방 기념 최초 할인! 채팅 참여만 해도 경...",
+            "url": "c.html"
+        },
+    
+        "live_day": {
+            "date": "11월 08일 (수)",
+            "time": "11:00"
+        },
+    
+        "live_good": {
+            "image": "images/live_2.jpg",
+            "title": "새로운 여행, 컨셉 트립 기획전",
+            "url": ""
+        }
     },
-    "good_3": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_3": {
+        "live_info": {
+            "image": "images/l3.png",
+            "state": "방송예정",
+            "title": "제주 자연 속에서 즐기는 온전한 쉼 파르나스 호텔 제주",
+            "url": "c.html"
+        },
+    
+        "live_day": {
+            "date": "",
+            "time": ""
+        },
+        "live_good": {
+            "image": "images/l1_1.jpeg",
+            "title": "네스트호텔 라이브특가 구매...",
+            "discount": 73,
+            "price": 125100,
+            "url": "good.html"
+        }
     },
-    "good_4": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_4": {
+        "live_info": {
+            "image": "images/l4.jpeg",
+            "state": "VOD",
+            "title": "[나트랑] 스완도르 올인클루시브 5일 70만원대~",
+            "url": "c.html"
+        },
+
+        "live_day": {
+            "date": "",
+            "time": ""
+        },
+    
+        "live_good": {
+            "image": "images/l4_1.png",
+            "title": "[카쇼라X스완도르 리조트]올...",
+            "price": 749000,
+            "url": "good.html"
+        }
     },
-    "good_5": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_5": {
+        "live_info": {
+            "image": "images/l5.jpg",
+            "state": "VOD",
+            "title": "소담상회 X 에이브랩",
+            "url": "c.html"
+        },
+
+        "live_day": {
+            "date": "",
+            "time": ""
+        },
+        "live_good": {
+            "image": "images/l5_1.png",
+            "title": "[10.31 라이브쇼핑 특가오픈]...",
+            "discount": 12,
+            "price": 35000,
+            "url": "good.html"
+        }
     },
-    "good_6": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_6": {
+        "live_info": {
+            "image": "images/l6.jpeg",
+            "state": "VOD",
+            "title": "전라도 특집 여수/전주/광주",
+            "url": "c.html"
+        },
+
+        "live_day": {
+            "date": "",
+            "time": ""
+        },
+        "live_good": {
+            "image": "images/l6_1.jpg",
+            "title": "히든베이 호텔",
+            "discount": 81,
+            "price": 84950,
+            "url": "good.html"
+        }
     },
-    "good_7": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_7": {
+        "live_info": {
+            "image": "images/l7.jpeg",
+            "state": "VOD",
+            "title": "진에어 동계 잔여석 & 3월 출발 단독 특가! 방송 중에만 제휴카...",
+            "url": "c.html"
+        },
+
+        "live_day": {
+            "date": "",
+            "time": ""
+        },
+        "live_good": {
+            "image": "images/l7_1.jpg",
+            "title": "[실시간 항공권] 인천<->오...",
+            "price": 217900,
+            "url": "good.html"
+        }
     },
-    "good_8": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_8": {
+        "live_info": {
+            "image": "images/l8.jpeg",
+            "state": "VOD",
+            "title": "용평리조트 최대 85% 라이브 특가! 7만원대~",
+            "url": "c.html"
+        },
+
+        "live_day": {
+            "date": "",
+            "time": ""
+        },
+
+        "live_good": {
+            "image": "images/l8_1.jpeg",
+            "title": "용평리조트",
+            "discount": 80,
+            "price": 72000,
+            "url": "good.html"
+        }
     },
-    "good_9": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_9": {
+        "live_info": {
+            "image": "images/l9.jpeg",
+            "state": "VOD",
+            "title": "[이달의 여행] 코타키나발루 특가를 다 모았다!",
+            "url": "c.html"
+        },
+
+        "live_day": {
+            "date": "",
+            "time": ""
+        },
+    
+        "live_good": {
+            "image": "images/l9_1.png",
+            "title": "[이달의 여행] 코타키나발루 특가모음",
+            "url": "good.html"
+        }
     },
-    "good_10": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_10": {
+        "live_info": {
+            "image": "images/l1.png",
+            "state": "방송예정",
+            "title": "소담상회 X 에이브랩",
+            "url": "c.html"
+        },
+    
+        "live_day": {
+            "date": "",
+            "time": ""
+        },
+    
+        "live_good": {
+            "image": "images/live_2.jpg",
+            "title": "[10.31] ~",
+            "discount": 12,
+            "price": 35000,
+            "url": "good.html"
+        }
     },
-    "good_11": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_11": {
+        "live_info": {
+            "image": "images/l1.png",
+            "state": "방송예정",
+            "title": "소담상회 X 에이브랩",
+            "url": "c.html"
+        },
+    
+        "live_day": {
+            "date": "",
+            "time": ""
+        },
+    
+        "live_good": {
+            "image": "images/l1.png",
+            "title": "[10.31] ~",
+            "discount": 12,
+            "price": 35000,
+            "url": "good.html"
+        }
     },
-    "good_12": {
-        "image": "images/r1.jpg",
-        "discount": 13,
-        "price": 26000,
-        "desc": "설명입니다.",
-        "url": "a.html"
+    "live_12": {
+        "live_info": {
+            "image": "images/l1.png",
+            "state": "방송예정",
+            "title": "소담상회 X 에이브랩",
+            "url": "c.html"
+        },
+    
+        "live_day": {
+            "date": "",
+            "time": ""
+        },
+    
+        "live_good": {
+            "image": "images/live_2.jpg",
+            "title": "[10.31] ~",
+            "discount": 12,
+            "price": 35000,
+            "url": "good.html"
+        }
     }
 }

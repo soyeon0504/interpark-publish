@@ -1,5 +1,4 @@
 window.addEventListener("load", function(){
-    console.log("이벤트코딩");
 
     const fileName = "event.json"
 
@@ -8,16 +7,14 @@ window.addEventListener("load", function(){
     xhr.open("GET", fileName);
     xhr.send();
     xhr.onreadystatechange = function(event){
-        console.log("데이터 전송 상태 확인", event.target.readyState);
         if(event.target.readyState === XMLHttpRequest.DONE) {
-            console.log("자료 가져오는데 성공완료", event.target.response);
         }
     }
     const htmlEventTag = ``;
 
     const eventSlide = ".event-slide .swiper-wrapper";
 
-    const swiperTour = new Swiper(".event-slide", {
+    const swiperEvent = new Swiper(".event-slide", {
     slidesPerView: 4,
     spaceBetween: 28,
     navigation: {

@@ -57,7 +57,6 @@ window.addEventListener("load", function () {
         htmlTourTag += tempTag;
       }
   
-  console.log("메롱")
       showHtmlTag(htmlTourTag);
     }
   

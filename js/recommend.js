@@ -28,6 +28,11 @@
 // })
 
 window.addEventListener("load", function () {
+  // 숫자에 콤마를 출력한 함수
+  function numberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+  
   // console.log("추천상품코딩");
   // 추천 상품 슬라이드 기능
   // 글로써 코딩 시나리오 작성 : 의사코드
@@ -82,7 +87,19 @@ window.addEventListener("load", function () {
       const obj = _res["good_" + index];
       // console.log(obj);
 
-      const tempTag = `
+      let tempTag = ``;
+
+
+      //마지막 json 에서는 url 만 읽어들인다.
+      //그렇지 않으면 일반적으로 모두 출력한다.
+      if( i === _res.total - 1 ){
+        tempTag = `
+          <div class="swiper-slide">
+            바로가기
+          </div>  
+        `
+      }else{
+        tempTag = `
           <div class="swiper-slide">
             <div class="recommend-slide-item">
               <a href="${obj.url}" class="recommend-link">
@@ -93,8 +110,8 @@ window.addEventListener("load", function () {
                   <ul class="recommend-good-list">
                     <li>
                       <span class="recommend-good-info-price">
-                        <b>${obj.discount}%</b>
-                        <em>${obj.price}</em>
+                        <b>${ obj.discount === 0 ? "" : obj.discount + "%"}</b>
+                        <em>${numberWithCommas(obj.price)}</em>
                         원
                       </span>
                     </li>
@@ -109,6 +126,10 @@ window.addEventListener("load", function () {
             </div>
           </div>
         `;
+
+      }
+
+
       // console.log(tempTag);
       // htmlRecommendTag = htmlRecommendTag + tempTag;
       htmlRecommendTag += tempTag;

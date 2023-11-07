@@ -74,7 +74,7 @@
     height: 355px;
     border: 1px solid #e8e8e8;
     border-radius: 10px;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
     overflow: hidden;
 }
 .tour-link {
@@ -118,8 +118,8 @@
 }
 .tour-good-info-title {
     position: relative;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 400;
     color: #1769ff;
 }
 .tour-good-info-price em {
@@ -131,7 +131,7 @@
 .tour-good-info-desc {
     position: relative;
     font-size: 1.5rem;
-    color: #111;
+    color: #333;
     word-break: break-all;
     /* 2줄이상 말줄임 */
     overflow: hidden;
